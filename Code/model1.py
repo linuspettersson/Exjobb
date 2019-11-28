@@ -3,14 +3,14 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import subprocess
 
 from datetime import datetime
 
 import tensorflow as tf
 from tensorflow import keras
-import tensorflow_datasets as tfds
+#import tensorflow_datasets as tfds
 
 #subprocess.call(["load_ext", "tensorboard"])
 
@@ -53,7 +53,7 @@ tensorboard_callback = keras.callbacks.TensorBoard(log_dir=logdir)
 model.fit(train_images, train_labels, epochs=1, callbacks=[tensorboard_callback])
 
 subprocess.call(["mkdir", "-p", "saved_model"])
-model.save("saved_model/my_model")
+model.save("saved_model/my_model.h5")
 
 #model.evaluate(test_images, test_labels, verbose=1)
 

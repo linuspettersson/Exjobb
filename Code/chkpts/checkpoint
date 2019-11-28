@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/jetson/Exjobb/Code/chkpts/float_model.ckpt"
+all_model_checkpoint_paths: "/home/jetson/Exjobb/Code/chkpts/float_model.ckpt"
